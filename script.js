@@ -94,13 +94,29 @@
 
 console.log("I'm Here before DOM Load");
 
+const startTime = performance.now();
+
+//Event Listener
+
 document.addEventListener("DOMContentLoaded", (event) => {
-  // const endTime =
+  const endTime = performance.now();
+  const loadTime = (endTime - startTime).toFixed(2); //Calculate time in milliseconds
+  console.log("DOM fully loaded and parsed");
+  console.log(`DOM load time: ${loadTime} ms`);
 
   const mainTitle = document?.querySelector("#main-title");
-  // console.log(mainTitle);
+  console.log(mainTitle);
 
-  //Change the Main Title
+  const mainButton = document.querySelector("#main-button");
+  // console.log(mainButton);
 
-  mainTitle.textContent = "I'm The Changed one";
+  // Bind click event to the main button
+  mainButton.addEventListener("click", () => {
+    // Change the main title
+    mainTitle.textContent = "I'm the Changed One!";
+
+    // setTimeout(() => {
+    //   window.location.reload(true);
+    // }, 200);
+  });
 });
