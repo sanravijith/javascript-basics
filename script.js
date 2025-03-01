@@ -1,4 +1,4 @@
-console.log("I'm Second JavaScript file Here! ", userEmail);
+// console.log("I'm Second JavaScript file Here! ", userEmail);
 //primitive types
 // let UserId = 412;
 
@@ -31,11 +31,12 @@ console.log("I'm Second JavaScript file Here! ", userEmail);
 // console.log("Type of UID : ", typeof UniqueID);
 
 //Object Types
-// let person = { name: "Sandun", age: 29 };
+// let person = { name: "Sandun", age: 34 };
 // console.log("Person : ", person);
 // console.log("Type of Person : ", typeof person);
 
 // let myArray = [1, 2, 3, 4, 5];
+// console.log("My Array : ", myArray.length);
 // console.log("My Array : ", myArray);
 // console.log("Type of My Array : ", typeof myArray);
 
@@ -52,7 +53,7 @@ console.log("I'm Second JavaScript file Here! ", userEmail);
 // //After ES(6)
 
 // const greet2 = (name) => {
-//   return `Hello, ${name}`;
+//   //   return `Hello, ${name}`;
 // };
 
 // console.log("Value of Greet2 : ", greet2("Sandun"));
@@ -60,17 +61,24 @@ console.log("I'm Second JavaScript file Here! ", userEmail);
 
 // //Destructuring
 // let user = {
-//      name: "Sandun",
-//      age: 29
-//     data: {
-//         uuid: "23456456"
-//         token: "hjskahdsdh235a4sd"
-//         createdAt: "23.02.2025"
-
-//         }};
-// // const { name, age } = user;
+//   name: "Sandun",
+//   age: 29,
+//   data: {
+//     uuid: "23456456",
+//     token: "hjskahdsdh235a4sd",
+//     createdAt: "23.02.2025",
+//     images: ["164546", "789564", "64543"],
+//   },
+// };
+// // const { name, age } = person;
 // console.log("Name: ", user.name);
-// console.log("Name: ", user.age);
+// console.log("Age: ", user.age);
+
+// const { uuid } = user.data;
+// console.log("UUID : ", uuid);
+
+//Optional Chaining
+// console.log("UpdatedAt : ", user?.data?.updatedAt ?? "Not Available"); //Nullish Coalescing
 
 //Spread & Rest Operator (ES6)
 
@@ -79,6 +87,8 @@ console.log("I'm Second JavaScript file Here! ", userEmail);
 
 // myArray2.push(6);
 // myArray2.push(7);
+
+// myArray2.pop(1);
 
 // console.log(myArray2);
 
