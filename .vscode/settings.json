@@ -3,5 +3,6 @@
   "editor.fontVariations": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "liveServer.settings.CustomBrowser": "chrome",
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "cSpell.words": []
 }

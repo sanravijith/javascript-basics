@@ -1,11 +1,11 @@
-//inline comment
+// Inline comment
 /*multiline comment*/
 
 // Snake Case (Old)
 var user_email = "sanravijith@gmail.com";
 
 // Snake Case Capital for Constant Values
-const APP_URL = "http://127.0.0.1:5500/";
+var APP_URL = "http://127.0.0.1:5500/";
 
 // Camel Case (New Standard)
 var userEmail = "sanravijith@gmail.com";
